@@ -4,16 +4,19 @@ using UnityEngine;
 using System.Text;
 using System.IO;
 
+namespace AlternatingForcedChoice {
 
 	public class CsvRead : MonoBehaviour {
 
-		public string file;
-		public static List<string> questionnaireInput  = new List<string>();
-
+		public string fileA;
+		public string fileB;
+		public static List<string> questionnaireInput1  = new List<string>();
+		public static List<string> questionnaireInput2  = new List<string>();
 
 		// Use this for initialization
 		void Awake () {
-			Load (file, questionnaireInput);
+			Load (fileA, questionnaireInput1);
+			Load (fileB, questionnaireInput2);
 		}
 
 
@@ -69,3 +72,4 @@ using System.IO;
 			}
 		}
 	}
+}
