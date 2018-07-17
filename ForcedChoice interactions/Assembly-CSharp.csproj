@@ -51,11 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CsvRead.cs" />
-     <Compile Include="Assets\CsvWrite.cs" />
-     <Compile Include="Assets\MovingObject.cs" />
-     <Compile Include="Assets\TaskContentIntegration.cs" />
-     <Compile Include="Assets\TriggerInteractions.cs" />
+     <Compile Include="Assets\Scripts\CsvRead.cs" />
+     <Compile Include="Assets\Scripts\CsvWrite.cs" />
+     <Compile Include="Assets\Scripts\MovingObject.cs" />
+     <Compile Include="Assets\Scripts\SimpleConfigurations.cs" />
+     <Compile Include="Assets\Scripts\TaskContentIntegration.cs" />
+     <Compile Include="Assets\Scripts\TriggerInteractions.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

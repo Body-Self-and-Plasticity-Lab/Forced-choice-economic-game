@@ -9,7 +9,8 @@ namespace AlternatingForcedChoice {
 			
 		public GameObject contentManager;
 
-		public Collider selection1, selection2;
+		public GameObject selection1, selection2;
+		public Material notSelected, selected;
 
 		private CsvWrite writer;
 		private TaskContentIntegration textContent;
@@ -37,13 +38,17 @@ namespace AlternatingForcedChoice {
 			
 		void OnTriggerEnter(Collider other) {
 
-			if (other == selection1) {
+			if (other == selection1.GetComponent<Collider>()) {
 				forcedResponse = textContent.responseTextA;
+				selection1.GetComponent<Renderer> ().material = selected;
+				selection2.GetComponent<Renderer> ().material = notSelected;
 				goToNext.SetActive (true);
 			}
 
-			if (other == selection2) {
+			if (other == selection2.GetComponent<Collider>()) {
 				forcedResponse = textContent.responseTextB;
+				selection2.GetComponent<Renderer> ().material = selected;
+				selection1.GetComponent<Renderer> ().material = notSelected;
 				goToNext.SetActive (true);
 			}
 
@@ -51,6 +56,9 @@ namespace AlternatingForcedChoice {
 
 				responseTime = Time.fixedTime - timeAtStart;
 				goToNext.SetActive (false);
+
+				selection1.GetComponent<Renderer> ().material = notSelected;
+				selection2.GetComponent<Renderer> ().material = notSelected;
 
 				writer.onNextButtonPressed ();
 				textContent.OnNextButton ();

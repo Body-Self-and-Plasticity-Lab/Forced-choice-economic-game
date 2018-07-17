@@ -1,12 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CsvWrite.cs">
-    <Files>
-      <File FileName="Assets\TriggerInteractions.cs" Line="47" Column="31" />
-      <File FileName="Assets\TaskContentIntegration.cs" Line="73" Column="35" />
-      <File FileName="Assets\CsvWrite.cs" Line="49" Column="4" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

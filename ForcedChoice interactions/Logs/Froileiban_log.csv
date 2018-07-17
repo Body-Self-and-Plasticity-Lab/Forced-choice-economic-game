@@ -1,0 +1,4 @@
+task,item a,item b,selection,reaction time
+task I,2,3,Keep,1.360
+task I,5,4,Keep,1.680
+task I,0,0,Keep,2.440

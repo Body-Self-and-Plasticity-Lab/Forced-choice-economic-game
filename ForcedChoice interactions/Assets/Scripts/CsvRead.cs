@@ -8,15 +8,19 @@ namespace AlternatingForcedChoice {
 
 	public class CsvRead : MonoBehaviour {
 
-		public string fileA;
-		public string fileB;
-		public static List<string> questionnaireInput1  = new List<string>();
-		public static List<string> questionnaireInput2  = new List<string>();
+		public string file1A, file1B, file2A, file2B;
+
+		public static List<string> questionnaireInput1A  = new List<string>();
+		public static List<string> questionnaireInput1B  = new List<string>();
+		public static List<string> questionnaireInput2A  = new List<string>();
+		public static List<string> questionnaireInput2B  = new List<string>();
 
 		// Use this for initialization
 		void Awake () {
-			Load (fileA, questionnaireInput1);
-			Load (fileB, questionnaireInput2);
+			Load (file1A, questionnaireInput1A);
+			Load (file1B, questionnaireInput1B);
+			Load (file2A, questionnaireInput2A);
+			Load (file2B, questionnaireInput2B);
 		}
 
 

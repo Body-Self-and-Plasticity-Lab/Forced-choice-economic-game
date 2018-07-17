@@ -18,15 +18,30 @@ namespace AlternatingForcedChoice {
 		public static int  questionList1Index, questionList2Index;
 		public string responseTextA, responseTextB;
 
+		private int currentCondition;
+
 		void Start () {
 
-			questionList1 = CsvRead.questionnaireInput1;
-			questionList2 = CsvRead.questionnaireInput2;
-
+			FillWordLists ();
 			FillPosibleItems ();
 			RandomItemFromList ();
-
 			RandomizeResponseOrder ();
+		}
+
+		void FillWordLists() {
+
+			Debug.Log (SimpleConfigurations.selectedOrder);
+
+			if (SimpleConfigurations.selectedOrder) {
+				questionList1 = CsvRead.questionnaireInput1A;
+				questionList2 = CsvRead.questionnaireInput1B;
+			} 
+
+			else if (!SimpleConfigurations.selectedOrder) {
+				questionList1 = CsvRead.questionnaireInput2A;
+				questionList2 = CsvRead.questionnaireInput2B;
+			}
+
 		}
 
 		void FillPosibleItems() {
@@ -38,18 +53,6 @@ namespace AlternatingForcedChoice {
 
 		}
 			
-		public void OnNextButton() {
-
-			if (possibleItems1.Count >= 1)
-				RandomItemFromList ();
-
-			else if (possibleItems1.Count < 1) {
-				textA.text = "and that's it!";
-				textB.text = "and that's it!";
-			}
-				
-		}
-
 		void RandomItemFromList() {
 
 			int questionList1Random = Random.Range (0, possibleItems1.Count);
@@ -79,6 +82,7 @@ namespace AlternatingForcedChoice {
 			RandomizeResponseOrder ();
 		}
 			
+			
 
 		void RandomizeResponseOrder() {
 			
@@ -96,6 +100,35 @@ namespace AlternatingForcedChoice {
 
 			responseTextA = responseA.text;
 			responseTextB = responseB.text;
+		}
+
+		public void OnNextButton() {
+
+			//Debug.Log (possibleItems1.Count);
+
+			if (possibleItems1.Count >= 1)
+				RandomItemFromList ();
+
+			else if (possibleItems1.Count < 1) {
+				
+				if (currentCondition < 1) {
+					
+					SimpleConfigurations.selectedOrder = !SimpleConfigurations.selectedOrder;
+
+					FillWordLists ();
+					FillPosibleItems ();
+					RandomItemFromList ();
+					RandomizeResponseOrder ();
+					currentCondition++;
+				} 
+
+				else {
+					textA.text = "you're done with both tasks!";
+					textA.text = "you're done with both tasks!";
+				}
+					
+			}
+
 		}
 	}
 }
