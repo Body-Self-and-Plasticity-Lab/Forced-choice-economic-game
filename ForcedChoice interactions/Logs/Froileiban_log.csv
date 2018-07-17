@@ -2,3 +2,19 @@ task,item a,item b,selection,reaction time
 task I,2,3,Keep,1.360
 task I,5,4,Keep,1.680
 task I,0,0,Keep,2.440
+task,item a,item b,selection,reaction time
+task I,4,5,Keep,1.520
+task I,0,4,Share,2.740
+task I,1,1,Share,2.180
+task I,5,2,Keep,1.720
+task,item a,item b,selection,reaction time
+task I,0,4,Keep,2.720
+task I,5,0,Share,3.800
+task,item a,item b,selection,reaction time
+task I,2,5,Keep,3.020
+task I,3,3,Keep,2.600
+task,item a,item b,selection,reaction time
+task I,5,5,Share,2.240
+task I,4,3,Keep,3.060
+task I,3,0,Share,2.540
+task I,0,2,Keep,2.760
