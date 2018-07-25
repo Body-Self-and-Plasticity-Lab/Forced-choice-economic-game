@@ -34,7 +34,7 @@ namespace AlternatingForcedChoice {
 
 			instructions.SetActive (true);
 
-			while (!Input.GetKeyDown ("space")) {
+			while (!Input.GetKeyDown ("t")) {
 				yield return null;
 			}
 

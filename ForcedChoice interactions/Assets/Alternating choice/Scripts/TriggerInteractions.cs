@@ -28,9 +28,23 @@ namespace AlternatingForcedChoice {
 		void Start () {
 			
 			goToNext.SetActive (false);
+			selection1.SetActive (false);
+			selection2.SetActive (false);
+
+			StartCoroutine (SetupInteractions ());
 
 			textContent = contentManager.GetComponent<TaskContentIntegration> ();
 			writer = contentManager.GetComponent<CsvWrite> ();
+		}
+
+		private IEnumerator SetupInteractions() {
+
+			while (!Input.GetKeyDown ("t")) {
+				yield return null;
+			}
+
+			selection1.SetActive (true);
+			selection2.SetActive (true);
 
 			timeAtStart = Time.fixedTime; 
 		}
