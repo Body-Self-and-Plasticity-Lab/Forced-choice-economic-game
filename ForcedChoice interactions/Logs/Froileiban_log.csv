@@ -18,3 +18,61 @@ task I,5,5,Share,2.240
 task I,4,3,Keep,3.060
 task I,3,0,Share,2.540
 task I,0,2,Keep,2.760
+task,item a,item b,selection,reaction time
+task I,0,5,Share,3.540
+task I,5,2,Keep,2.680
+task,item a,item b,selection,reaction time
+task I,2,5,Share,2.720
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,2,2,Share,6.280
+task I,1,4,Keep,2.880
+task I,0,5,Keep,2.180
+task I,3,0,Keep,2.160
+task I,5,3,Keep,2.880
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,3,1,Keep,6.300
+task,item a,item b,selection,reaction time
+task I,0,2,Share,2.600
+task I,2,0,Keep,2.700
+task I,1,5,Share,3.120
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,4,1,Share,6.620
+task I,2,5,Keep,1.960
+task I,1,3,Share,2.460
+task I,3,2,Keep,1.380
+task I,5,4,Share,2.800
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,5,3,Share,6.720
+task,item a,item b,selection,reaction time
+task I,1,3,Share,1.480
+task I,3,2,Share,2.880
+task I,0,1,Keep,1.860
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,4,3,Share,2.220
+task I,1,2,Share,2.260
+task I,3,0,Share,1.680
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,3,4,Keep,2.220
+task I,1,5,Share,5.300
+task,item a,item b,selection,reaction time
+task I,3,2,Keep,2.640
+task,item a,item b,selection,reaction time
+task I,3,2,Keep,3.280
+task,item a,item b,selection,reaction time
+task I,4,2,Keep,1.980

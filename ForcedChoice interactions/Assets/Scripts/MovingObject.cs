@@ -21,10 +21,10 @@ public class MovingObject : MonoBehaviour {
 
 	void MoveThisObject() { //For debugging
 
-		if(Input.GetKey("left")) selector.transform.position = new Vector3 (selector.transform.position.x - 0.1f, selector.transform.position.y , 0f);
-		if(Input.GetKey("right")) selector.transform.position = new Vector3 (selector.transform.position.x + 0.1f, selector.transform.position.y , 0f);
-		if(Input.GetKey("down")) selector.transform.position = new Vector3 (selector.transform.position.x, selector.transform.position.y -0.1f , 0f);
-		if(Input.GetKey("up")) selector.transform.position = new Vector3 (selector.transform.position.x, selector.transform.position.y +0.1f , 0f);
+		if(Input.GetKey("left")) selector.transform.position = new Vector3 (selector.transform.position.x - 0.1f, selector.transform.position.y , selector.transform.position.z);
+		if(Input.GetKey("right")) selector.transform.position = new Vector3 (selector.transform.position.x + 0.1f, selector.transform.position.y , selector.transform.position.z);
+		if(Input.GetKey("down")) selector.transform.position = new Vector3 (selector.transform.position.x, selector.transform.position.y -0.1f , selector.transform.position.z);
+		if(Input.GetKey("up")) selector.transform.position = new Vector3 (selector.transform.position.x, selector.transform.position.y +0.1f , selector.transform.position.z);
 	}
 
-}
+}	
