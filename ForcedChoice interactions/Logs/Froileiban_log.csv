@@ -76,3 +76,162 @@ task,item a,item b,selection,reaction time
 task I,3,2,Keep,3.280
 task,item a,item b,selection,reaction time
 task I,4,2,Keep,1.980
+task,item a,item b,selection,reaction time
+task I,0,0,Keep,8.780
+task,item a,item b,selection,reaction time
+task I,5,1,Share,5.020
+task I,0,3,Share,4.660
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task I,5,2,Keep,8.380
+task I,3,0,Keep,2.820
+task I,0,4,Share,2.860
+task I,1,1,Keep,2.760
+task,item a,item b,selection,reaction time
+task I,2,2,Keep,1.520
+task I,5,3,Keep,1.960
+task I,3,1,Keep,2.380
+task I,1,5,Keep,2.220
+task,item a,item b,selection,reaction time
+task I,2,1,Share,4.140
+task I,0,0,Share,1.580
+task,item a,item b,selection,reaction time
+task I,0,0,,2.020
+task,item a,item b,selection,reaction time
+task I,10,24,Share,1.960
+task I,1,18,Keep,2.060
+task,item a,item b,selection,reaction time
+task I,1,25,Keep,1.400
+task I,20,44,Keep,1.460
+task I,47,32,Keep,1.940
+task I,38,9,Keep,8.280
+task I,12,52,Share,2.420
+task I,6,40,Keep,2.760
+task I,22,41,Keep,1.540
+task I,37,43,Share,5.840
+task I,28,45,Keep,1.760
+task I,40,11,Keep,1.660
+task I,42,38,Keep,2.240
+task I,36,30,Share,2.000
+task I,27,37,Share,4.080
+task I,52,27,Keep,2.320
+task I,19,34,Keep,1.820
+task I,32,5,Keep,1.620
+task,item a,item b,selection,reaction time
+task,item a,item b,selection,reaction time
+task II,11,33,Keep,11.840
+task II,15,28,Keep,2.920
+task II,51,39,Keep,2.680
+task,item a,item b,selection,reaction time
+task II,41,49,Share,5.580
+task II,2,32,Keep,2.240
+task II,45,52,Keep,2.000
+task II,28,21,Keep,1.460
+task II,50,27,Share,5.140
+task II,27,35,Share,1.740
+task,item a,item b,selection,reaction time
+task II,38,28,Keep,3.120
+task II,17,21,Share,2.360
+task II,18,9,Share,2.120
+task II,30,7,Share,1.960
+task II,44,32,Keep,2.540
+task II,47,16,Keep,1.900
+task II,32,12,Keep,1.880
+task II,28,50,Share,1.900
+task II,16,10,Keep,1.580
+task II,1,15,Keep,4.080
+task II,22,8,Keep,1.700
+task II,15,25,Share,1.900
+task,item a,item b,selection,reaction time
+task II,19,3,Keep,1.600
+task,item a,item b,selection,reaction time
+task I,3,50,Share,1.480
+task I,43,30,Keep,1.600
+task I,30,17,Keep,1.760
+task I,39,19,Keep,1.920
+task,item a,item b,selection,reaction time
+task I,38,33,Share,1.520
+task I,41,19,Keep,1.840
+task,item a,item b,selection,reaction time
+task I,8,8,Share,1.740
+task I,24,24,Share,1.500
+task I,6,6,Keep,1.840
+task I,21,21,Share,1.400
+task I,45,45,Keep,1.220
+task I,50,50,Keep,0.840
+task I,27,27,Keep,0.880
+task I,25,25,Keep,0.760
+task I,48,48,Share,0.860
+task I,14,14,Keep,0.780
+task I,51,51,Keep,0.800
+task I,28,28,Share,0.720
+task I,40,40,Keep,1.720
+task I,42,42,Share,1.200
+task I,41,41,Share,1.000
+task I,31,31,Share,1.100
+task I,47,47,Share,1.000
+task I,18,18,Keep,1.060
+task I,17,17,Keep,0.920
+task I,4,4,Share,1.240
+task I,16,16,Share,0.900
+task I,10,10,Keep,0.820
+task I,2,2,Share,0.820
+task I,38,38,Share,0.700
+task I,12,12,Keep,1.580
+task I,29,29,Keep,0.960
+task I,34,34,Share,1.300
+task I,39,39,Share,0.920
+task I,43,43,Share,0.960
+task I,53,53,Keep,1.080
+task I,9,9,Keep,0.960
+task I,52,52,Keep,0.960
+task I,11,11,Keep,0.960
+task I,46,46,Keep,1.000
+task I,49,49,Keep,0.920
+task I,0,0,Keep,0.860
+task I,35,35,Share,0.900
+task I,33,33,Share,0.960
+task I,32,32,Share,1.040
+task I,5,5,Share,1.100
+task I,36,36,Keep,0.960
+task I,15,15,Share,0.960
+task I,1,1,Keep,0.960
+task I,30,30,Keep,0.980
+task I,23,23,Share,1.120
+task I,22,22,Keep,0.920
+task I,44,44,Keep,1.120
+task I,37,37,Keep,0.900
+task I,3,3,Keep,0.940
+task I,19,19,Share,0.840
+task I,20,20,Share,1.080
+task I,26,26,Share,0.900
+task I,7,7,Share,0.880
+task I,13,13,Keep,1.200
+task II,20,20,Keep,0.820
+task,item a,item b,selection,reaction time
+task I,33,33,Share,1.980
+task,item a,item b,selection,reaction time
+task I,35,35,Keep,1.300
+task I,26,26,Keep,2.380
+task,item a,item b,selection,reaction time
+task I,15,15,Share,8.220
+task I,30,30,Keep,1.980
+task I,24,24,Keep,1.640
+task I,19,19,Share,1.220
+task I,36,36,Keep,2.220
+task I,12,12,Share,3.120
+task I,16,16,Keep,1.800
+task I,44,44,Share,6.720
+task,item a,item b,selection,reaction time
+task I,34,34,Keep,2.020
+task I,38,38,Keep,2.800
+task,item a,item b,selection,reaction time
+task I,5,5,Keep,3.500
+task I,17,17,Keep,1.520
+task I,6,6,Share,1.820
+task I,18,18,Keep,2.220
+task,item,selection,reaction time
+task I,0,Share,1.540
+task I,37,Keep,1.520
+task,item,selection,reaction time
+task I,47,Keep,2.100

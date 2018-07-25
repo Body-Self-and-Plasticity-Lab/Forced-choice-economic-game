@@ -51,12 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CsvRead.cs" />
-     <Compile Include="Assets\Scripts\CsvWrite.cs" />
-     <Compile Include="Assets\Scripts\MovingObject.cs" />
-     <Compile Include="Assets\Scripts\SimpleConfigurations.cs" />
-     <Compile Include="Assets\Scripts\TaskContentIntegration.cs" />
-     <Compile Include="Assets\Scripts\TriggerInteractions.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\CsvRead.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\CsvWrite.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\InstructionsTextSelector.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\MovingObject.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\SimpleConfigurations.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\TaskContentIntegration.cs" />
+     <Compile Include="Assets\Alternating choice\Scripts\TriggerInteractions.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
