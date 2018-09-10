@@ -14,7 +14,7 @@ namespace AlternatingForcedChoice {
 		List<int> possibleItems2 = new List<int> ();
 
 		public Text textA, textB, instructionsText;
-		public GameObject instructions;
+		public GameObject instructions1, instructions2, thankyou;
 
 		public static int  questionListIndex;
 		public string responseTextA, responseTextB;
@@ -32,20 +32,31 @@ namespace AlternatingForcedChoice {
 
 		private IEnumerator ShowInstructions() {
 
-			instructions.SetActive (true);
+			instructions1.SetActive (true);
+			instructions2.SetActive (false);
+			thankyou.SetActive (false);
 
 			while (!Input.GetKeyDown ("t")) {
 				yield return null;
 			}
 
-			if (currentCondition <= 1){
+			if (!SimpleConfigurations.selectedOrder) { //if it's the social discount task show second set of instructions by pressing space
+				instructions1.SetActive (false);
+				instructions2.SetActive (true);
 
-				instructions.SetActive (false);
+				while (!Input.GetKeyDown ("space")) {
+					yield return null;
+				}
+			}
+
+			if (currentCondition <= 1){
+				instructions1.SetActive (false);
+				instructions2.SetActive (false);
 				FillWordLists ();
 				FillPosibleItems ();
 				RandomItemFromList ();
 			}
-
+				
 			else {
 			//do something, maybe go to questionnaire?
 			}
@@ -120,13 +131,15 @@ namespace AlternatingForcedChoice {
 
 					SimpleConfigurations.selectedOrder = !SimpleConfigurations.selectedOrder;
 
-					StartCoroutine(ShowInstructions());
+					//StartCoroutine(ShowInstructions());
+					StartCoroutine (ShowThankYou ());
 					currentCondition++;
 				} 
 
 				else {
 					currentCondition++;
-					StartCoroutine(ShowInstructions());
+					//StartCoroutine(ShowInstructions());
+					StartCoroutine (ShowThankYou ());
 					//textA.text = "you're done with both tasks!";
 					//textB.text = "you're done with both tasks!";
 				}
@@ -134,5 +147,19 @@ namespace AlternatingForcedChoice {
 			}
 
 		}
+
+		private IEnumerator ShowThankYou() {
+
+			thankyou.SetActive (true);
+
+			while (!Input.GetKeyDown ("t")) {
+				yield return null;
+			}
+			if (currentCondition <= 1)
+				StartCoroutine (ShowInstructions ());
+			else
+				Debug.Log ("it's all done");
+		}
+
 	}
 }
