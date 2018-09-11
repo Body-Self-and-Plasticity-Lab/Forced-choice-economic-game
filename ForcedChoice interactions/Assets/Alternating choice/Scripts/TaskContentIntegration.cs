@@ -14,39 +14,52 @@ namespace AlternatingForcedChoice {
 		List<int> possibleItems2 = new List<int> ();
 
 		public Text textA, textB, instructionsText;
-		public GameObject instructions1, instructions2, thankyou;
+		public GameObject instructions1, instructions2, thankyou, virtualUI;
+
+		public TriggerInteractions interactionManager;
 
 		public static int  questionListIndex;
 		public string responseTextA, responseTextB;
 
 		public static int currentCondition;
 
-		void Start () {
 
-			StartCoroutine(ShowInstructions());
+		void Start () {
+			StartCoroutine (SetScreenOff ());
+
 			//FillWordLists ();
 			//FillPosibleItems ();
 			//RandomItemFromList ();
 		
 		}
 
-		private IEnumerator ShowInstructions() {
+		private IEnumerator SetScreenOff(){
+			//turn everything off
+			virtualUI.SetActive(false);
 
+			while (!Input.GetKeyDown ("t"))	yield return null; //wait for key press
+			while (Input.GetKeyDown ("t")) yield return null; //wait for end of key press
+
+			virtualUI.SetActive (true);
+			StartCoroutine(ShowInstructions());
+
+		}
+
+		private IEnumerator ShowInstructions() {
+			
+			//turn everything off except the first set of instructions.
 			instructions1.SetActive (true);
 			instructions2.SetActive (false);
 			thankyou.SetActive (false);
 
-			while (!Input.GetKeyDown ("t")) {
-				yield return null;
-			}
+			while (!Input.GetKeyDown ("t")) yield return null;
+			while (Input.GetKeyDown ("t")) yield return null; 
 
 			if (!SimpleConfigurations.selectedOrder) { //if it's the social discount task show second set of instructions by pressing space
 				instructions1.SetActive (false);
 				instructions2.SetActive (true);
 
-				while (!Input.GetKeyDown ("space")) {
-					yield return null;
-				}
+				while (!Input.GetKeyDown ("t"))	yield return null;
 			}
 
 			if (currentCondition <= 1){
@@ -55,6 +68,7 @@ namespace AlternatingForcedChoice {
 				FillWordLists ();
 				FillPosibleItems ();
 				RandomItemFromList ();
+				interactionManager.SetupInteractions ();
 			}
 				
 			else {

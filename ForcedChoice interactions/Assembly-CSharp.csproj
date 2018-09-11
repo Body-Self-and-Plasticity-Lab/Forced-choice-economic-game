@@ -60,6 +60,9 @@
      <Compile Include="Assets\Alternating choice\Scripts\SimpleConfigurations.cs" />
      <Compile Include="Assets\Alternating choice\Scripts\TaskContentIntegration.cs" />
      <Compile Include="Assets\Alternating choice\Scripts\TriggerInteractions.cs" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>C:/Users/Marte/Documents/GitHub/Forced choice economic game/ForcedChoice interactions/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Marte/Documents/GitHub/Forced choice economic game/ForcedChoice interactions/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -68,9 +71,6 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Marte/Documents/GitHub/Forced choice economic game/ForcedChoice interactions/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.StandardEvents">
- <HintPath>C:/Users/Marte/Documents/GitHub/Forced choice economic game/ForcedChoice interactions/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
