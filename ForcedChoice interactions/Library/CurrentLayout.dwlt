@@ -90,8 +90,8 @@ MonoBehaviour:
     y: 0
     width: 547
     height: 801
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -354,11 +354,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Alternating choice/Materials
+    - Assets/Alternating choice/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Alternating choice/Materials
+  - Assets/Alternating choice/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Marte\Documents\GitHub\Forced choice economic game\ForcedChoice
     interactions
@@ -366,8 +366,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c60b0000
-    m_LastClickedID: 3014
+    m_SelectedIDs: e4090000
+    m_LastClickedID: 2532
     m_ExpandedIDs: 00000000560900004c0c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -512,9 +512,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 4eefffff
     m_LastClickedID: 0
-    m_ExpandedIDs: e6fbffff000000008a0c0000940c0000b80c0000d40c00009c0d0000b60d0000
+    m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -599,13 +599,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.031081477, y: 0.077834964, z: 0.002550663, w: -0.9964888}
+    m_Target: {x: -0.09313776, y: -0.026913194, z: 0.0026412616, w: -0.9952963}
     speed: 2
-    m_Value: {x: 0.031081155, y: 0.07783416, z: 0.0025506364, w: -0.9964785}
+    m_Value: {x: -0.09313776, y: -0.026913194, z: 0.0026412616, w: -0.99529636}
   m_Size:
-    m_Target: 12.595451
+    m_Target: 12.468439
     speed: 2
-    m_Value: 12.595451
+    m_Value: 12.468439
   m_Ortho:
     m_Target: 0
     speed: 2
