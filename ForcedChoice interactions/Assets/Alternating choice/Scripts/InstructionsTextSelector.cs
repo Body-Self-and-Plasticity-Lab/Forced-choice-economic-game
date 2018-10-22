@@ -24,6 +24,7 @@ public class InstructionsTextSelector : MonoBehaviour {
 					instructions1.SetActive (true);
 					instructions2.SetActive (false);
 				} else if (TaskContentIntegration.currentCondition == 1) {
+					Debug.Log ("the condition changed and new instructions are enabled");
 					instructions1.SetActive (false);
 					instructions2.SetActive (true);
 				}
@@ -34,6 +35,7 @@ public class InstructionsTextSelector : MonoBehaviour {
 					instructions1.SetActive (false);
 					instructions2.SetActive (true);
 				} else if (TaskContentIntegration.currentCondition == 1) {
+					Debug.Log ("the condition changed and new instructions are enabled");
 					instructions1.SetActive (true);
 					instructions2.SetActive (false);
 				}

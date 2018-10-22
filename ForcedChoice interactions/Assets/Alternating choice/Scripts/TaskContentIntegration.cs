@@ -60,6 +60,7 @@ namespace AlternatingForcedChoice {
 				instructions2.SetActive (true);
 
 				while (!Input.GetKeyDown ("t"))	yield return null;
+				while (Input.GetKeyDown ("t")) yield return null; 
 			}
 
 			if (currentCondition <= 1){
@@ -78,7 +79,7 @@ namespace AlternatingForcedChoice {
 
 		void FillWordLists() {
 
-			Debug.Log (SimpleConfigurations.selectedOrder);
+			//Debug.Log (SimpleConfigurations.selectedOrder);
 
 			if (SimpleConfigurations.selectedOrder) {
 				questionList1 = CsvRead.questionnaireInput1A;
@@ -166,9 +167,9 @@ namespace AlternatingForcedChoice {
 
 			thankyou.SetActive (true);
 
-			while (!Input.GetKeyDown ("t")) {
-				yield return null;
-			}
+			while (!Input.GetKeyDown ("t")) yield return null;
+			while (Input.GetKeyDown ("t")) yield return null; 
+			
 			if (currentCondition <= 1)
 				StartCoroutine (ShowInstructions ());
 			else
